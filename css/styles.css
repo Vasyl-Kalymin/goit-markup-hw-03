@@ -26,15 +26,58 @@ body{
     
 }
 
-/*забираємо крапочки в списку*/
-.list{
-    list-style: none;
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
+
+.section.features {
+    padding-bottom: 0;
+}
+
+.portfolio.section {
+    padding-top: 96;
+}
+
+.container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    outline: 2px solid red;
+    outline-offset: -2px;
+}
+
+/*Скидання початок*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+/*Скидання кінець*/
 
 /*забираємо підкреслення посилань*/
 .link{
     text-decoration: none;
     color: currentColor;
+}
+
+/*Задаємо зображенням Display-block*/
+.img-block {
+    display: block;
 }
 
 /*Робимо невидимі заголовки*/
@@ -115,7 +158,6 @@ body{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    font-family: inherit;
     cursor: pointer;
     border: none;
     width: 169px;
