@@ -191,8 +191,6 @@ ul {
 /*Стилізація головної секції*/
 .hero{
     background-color: var(--dark-color);
-    padding-right: auto;
-    padding-left: auto;
 }
 
 .hero-container{
