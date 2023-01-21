@@ -17,6 +17,9 @@
     --modal-overlay-color: rgba(46, 47, 66, 0.4);
     --hero-background-color: #2E2F42;
     --white-color: #ffffff;
+    /*інші*/
+    --indent: 24px;
+    --items: 4;
 }
 
 /*Базові стилі*/
@@ -26,6 +29,7 @@ body{
     
 }
 
+/*Додаємо загальний крас для секцій щоб посунути контент в середину*/
 .section {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -39,6 +43,7 @@ body{
     padding-top: 96;
 }
 
+/*Загальний контейнер щоб обмежити вміст по ширині*/
 .container {
     width: 1158px;
     padding-left: 15px;
@@ -78,6 +83,8 @@ ul {
 /*Задаємо зображенням Display-block*/
 .img-block {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /*Робимо невидимі заголовки*/
@@ -94,7 +101,27 @@ ul {
     overflow: hidden;
 }
 
+/*Додаємо Card set*/
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--indent);
+}
+
+.card-set-item {
+    flex-basis: calc((100% - (var(--indent) * (var(--items) - 1))) / var(--items));
+}
+
 /*стилізація хедеру*/
+.header {
+    border-bottom: 1px solid #E7E9FC;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
 .logo{
     font-family: 'Raleway';
     font-weight: 800;
@@ -102,10 +129,20 @@ ul {
     line-height: 1.33;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-right: 76px;
 }
 
 .logo-color{
     color: var(--primary-brand-color);
+}
+
+.header-nav {
+    margin-right: auto;
+}
+
+.header-list {
+    display: flex;
+    gap: 40px;
 }
 
 .navigation-link.current{
@@ -113,6 +150,9 @@ ul {
 }
 
 .navigation-link{
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -128,6 +168,12 @@ ul {
     color: var(--pressed-state-color);
 }
 
+.header-contact-ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
 .header-contact{
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -140,9 +186,18 @@ ul {
     color: var(--pressed-state-color);
 }
 
+
+
 /*Стилізація головної секції*/
 .hero{
     background-color: var(--dark-color);
+    padding-right: auto;
+    padding-left: auto;
+}
+
+.hero-container{
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .hero-title{
@@ -151,9 +206,14 @@ ul {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--white-color);
+    width: 496px;
+    margin-bottom: 48px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .hero-btn{
+    display: block;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -166,6 +226,8 @@ ul {
     background-color: var(--primary-brand-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .hero-btn:hover,
@@ -187,6 +249,7 @@ ul {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .features-text{
