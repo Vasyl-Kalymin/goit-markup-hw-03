@@ -46,13 +46,10 @@ body{
 /*Загальний контейнер щоб обмежити вміст по ширині*/
 .container {
     width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-
-    outline: 2px solid red;
-    outline-offset: -2px;
+    padding: 0 15px;
+    margin: 0 auto;
+    /*outline: 2px solid red;
+    outline-offset: -2px;*/
 }
 
 /*Скидання початок*/
@@ -263,6 +260,11 @@ ul {
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.profile-img {
+--items: 3;
 }
 
 /*стилізація секції Наша Команда*/
@@ -272,6 +274,13 @@ ul {
 
 .team-item{
     background-color: var(--white-color);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-container {
+    text-align: center;
+    padding: 32px 16px;
 }
 
 .team-hero{
@@ -279,6 +288,7 @@ ul {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    padding-bottom: 8px;
 }
 
 .team-text{
@@ -292,6 +302,15 @@ ul {
     background-color: var(--dark-color);
 }
 
+.footer-container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer-logo {
+    margin-right: 0;
+}
+
 .footer-logo-color{
     color: var(--light-color);
 }
@@ -299,11 +318,22 @@ ul {
 .footer-text{
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color:var(--accent-color) ;
+    color:var(--accent-color);
+    width: 264px;
+    margin-top: 16px;
 }
 
 
 /*Стилізація Портфоліо*/
+.portfolio-btn-list{
+    justify-content: center;
+    margin-bottom: 72px;
+}
+
+.portfolio-item {
+    --items: 5;
+}
+
 .portfolio-btn.current{
     background-color: var(--pressed-state-color);
     color: var(--white-color);
@@ -320,6 +350,7 @@ ul {
     background: var(--light-color);
     border: 1px solid #E7E9FC;
     border-radius: 4px;
+    padding: 12px 24px;
 }
 
 .portfolio-btn:hover,
@@ -332,11 +363,26 @@ ul {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.works-list {
+    row-gap: 48px;
+}
+
+.portfolio-works {
+    --items: 3;
+}
+
+.works-container{
+    padding: 32px 0;
+    border: 1px solid var(--accent-color);
+    border-top: none;
+}
+
 .work-title{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .work-text{
