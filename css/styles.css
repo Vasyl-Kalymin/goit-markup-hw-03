@@ -329,12 +329,10 @@ ul {
 
 /*Стилізація Портфоліо*/
 .portfolio-btn-list{
+    display: flex;
     justify-content: center;
     margin-bottom: 72px;
-}
-
-.portfolio-item {
-    --items: 5;
+    gap: var(--indent);
 }
 
 .portfolio-btn.current{
