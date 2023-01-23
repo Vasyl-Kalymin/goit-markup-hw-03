@@ -291,7 +291,7 @@ ul {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .team-text{
@@ -373,7 +373,7 @@ ul {
 }
 
 .works-container{
-    padding: 32px 0;
+    padding: 32px 16px;
     border: 1px solid var(--accent-color);
     border-top: none;
 }
